@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="weather-container">
+            <div class="content">
+                <h1 class="weather-title">Weekly Forecast</h1>
+                <div class="day-info">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path d="M12 2v2"></path>
+                            <path d="M12 20v2"></path>
+                            <path d="m4.93 4.93 1.41 1.41"></path>
+                            <path d="m17.66 17.66 1.41 1.41"></path>
+                            <path d="M2 12h2"></path>
+                            <path d="M20 12h2"></path>
+                            <path d="m6.34 17.66-1.41 1.41"></path>
+                            <path d="m19.07 4.93-1.41 1.41"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="day">Today</h2>
+                        <p class="temp" data-temp-f="76,54" data-temp-c="24,12">
+                            H: <span class="temp-value" data-index="0">76°</span>
+                            L: <span class="temp-value" data-index="1">54°</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="section-title">This week <button class="toggle-week" aria-expanded="true"
+                            aria-controls="week-forecast">▼</button></h2>
+                    <div id="week-forecast" class="week-list">
+                        <div class="day-info">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon">
+                                    <circle cx="12" cy="12" r="4"></circle>
+                                    <path d="M12 2v2"></path>
+                                    <path d="M12 20v2"></path>
+                                    <path d="m4.93 4.93 1.41 1.41"></path>
+                                    <path d="m17.66 17.66 1.41 1.41"></path>
+                                    <path d="M2 12h2"></path>
+                                    <path d="M20 12h2"></path>
+                                    <path d="m6.34 17.66-1.41 1.41"></path>
+                                    <path d="m19.07 4.93-1.41 1.41"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="day">Sun</h3>
+                                <p class="temp" data-temp-f="12,18" data-temp-c="-11,8">
+                                    <span class="temp-value" data-index="0">12°</span> - <span class="temp-value"
+                                        data-index="1">18°</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="day-info">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon">
+                                    <path d="M17.36 16.95A5 5 0 0 0 18 9h-1.26
+                                        A8 8 0 1 0 3 16.29"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="day">Mon</h3>
+                                <p class="temp" data-temp-f="15,17" data-temp-c="-9,7">
+                                    <span class="temp-value" data-index="0">18°</span> - <span class="temp-value"
+                                        data-index="1">20°</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="day-info">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon">
+                                    <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"></path>
+                                    <path d="M9.6 4.6A2 2 0 1 1 11 8H2"></path>
+                                    <path d="M12.6 19.4A2 2 0 1 0 14 16H2"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="day">Tue</h3>
+                                <p class="temp" data-temp-f="14,18" data-temp-c="-10,8">
+                                    <span class="temp-value" data-index="0">16°</span> - <span class="temp-value"
+                                        data-index="1">18°</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="day-info">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon">
+                                    <circle cx="12" cy="12" r="4"></circle>
+                                    <path d="M12 2v2"></path>
+                                    <path d="M12 20v2"></path>
+                                    <path d="m4.93 4.93 1.41 1.41"></path>
+                                    <path d="m17.66 17.66 1.41 1.41"></path>
+                                    <path d="M2 12h2"></path>
+                                    <path d="M20 12h2"></path>
+                                    <path d="m6.34 17.66-1.41 1.41"></path>
+                                    <path d="m19.07 4.93-1.41 1.41"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="day">Wed</h3>
+                                <p class="temp" data-temp-f="15,20" data-temp-c="-9,9">
+                                    <span class="temp-value" data-index="0">18°</span> - <span class="temp-value"
+                                        data-index="1">20°</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 class="stat-title">UV Index</h3>
+                        <p class="stat-value">7 High</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-title">Sunset</h3>
+                        <p class="stat-value">7:54PM</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-title">Wind</h3>
+                        <p class="stat-value">4mph</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"></path>
+                            <path d="M9.6 4.6A2 2 0 1 1 11 8H2"></path>
+                            <path d="M12.6 19.4A2 2 0 1 0 14 16H2"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-title">Humidity</h3>
+                        <p class="stat-value">42%</p>
+                    </div>
+                </div>
+                <div class="temp-toggle">
+                    <button class="temp-toggle-button active" data-unit="F">°F</button>
+                    <button class="temp-toggle-button" data-unit="C">°C</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
